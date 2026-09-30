@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222222;
+}
+
+header {
+    background-color: #1f3a5f;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    width: 85%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.story {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #cccccc;
+}
+
+#photoBox {
+    height: 320px;
+    background-color: #e5e5e5;
+    border: 1px solid #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#photoText {
+    font-size: 24px;
+}
+
+#storyCaption {
+    text-align: center;
+    font-size: 18px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 18px;
+    border: 1px solid #333333;
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #dddddd;
+}
+
+.sequence-preview {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.small-box {
+    width: 33%;
+    height: 130px;
+    background-color: #e5e5e5;
+    border: 1px solid #999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #dddddd;
+}
