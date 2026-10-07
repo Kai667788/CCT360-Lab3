@@ -3,73 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 3: Photo Carousel</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>My Walk | Kevin Wang</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <h1>Lab 3: Photo Carousel</h1>
-        <p>The Power of Sequencing</p>
-    </header>
+    <div class="page">
+        <div class="header">
+            <p class="label">KEVIN WANG / CCT360 LAB 3</p>
+            <h1>My Walk</h1>
+            <p>Three photos. Two stories.</p>
+            <p>I used the same three photos in two different orders to explore how sequencing changes a story.</p>
+        </div>
 
-    <main>
-        <section class="story">
-            <h2>Sequence 1</h2>
+        <p class="instructions">Click Beginning, Middle, and End in each story to change the photo and caption.</p>
 
-            <p>
-                I am building a short story with three photos.
-                I will add my final photos after class.
-            </p>
-
-            <div id="photoBox">
-                <p id="photoText">I will add Photo 1 here.</p>
+        <div class="stories">
+            <div class="story">
+                <p class="label">SEQUENCE 1 / PATH - BENCH - SUNSET</p>
+                <h2>A Quiet Break</h2>
+                <p>I go for a walk to clear my mind.</p>
+                <p id="stageOne" class="stage">Beginning / 1 of 3</p>
+                <img id="imageOne" src="photo1.jpg" alt="A dirt path surrounded by green forest trees">
+                <p id="captionOne" class="caption" aria-live="polite">I feel stressed, so I follow a quiet path away from my busy day.</p>
+                <div class="buttons">
+                    <button id="beginningOne" type="button">Beginning</button>
+                    <button id="middleOne" type="button">Middle</button>
+                    <button id="endOne" type="button">End</button>
+                </div>
+                <p class="meaning"><strong>My interpretation:</strong> The path becomes an escape, the bench offers rest, and the sunset gives the story a peaceful ending.</p>
             </div>
 
-            <p id="storyCaption">
-                Beginning: I am still deciding my final story.
-            </p>
-
-            <div class="buttons">
-                <button id="firstButton">Beginning</button>
-                <button id="secondButton">Middle</button>
-                <button id="thirdButton">End</button>
+            <div class="story">
+                <p class="label">SEQUENCE 2 / SUNSET - BENCH - PATH</p>
+                <h2>Moving On</h2>
+                <p>I return to a place that reminds me of a friend.</p>
+                <p id="stageTwo" class="stage">Beginning / 1 of 3</p>
+                <img id="imageTwo" src="photo3.jpg" alt="An orange sunset reflected on a lake">
+                <p id="captionTwo" class="caption" aria-live="polite">The sunset reminds me of the evenings I used to spend here with a friend.</p>
+                <div class="buttons">
+                    <button id="beginningTwo" type="button">Beginning</button>
+                    <button id="middleTwo" type="button">Middle</button>
+                    <button id="endTwo" type="button">End</button>
+                </div>
+                <p class="meaning"><strong>My interpretation:</strong> The sunset introduces a memory, the empty bench suggests someone is missing, and the path represents moving forward.</p>
             </div>
-        </section>
+        </div>
 
-        <section class="story">
-            <h2>Sequence 2</h2>
+        <div class="reflection">
+            <h2>What changes?</h2>
+            <p>In the first story, being alone feels relaxing. In the second, it feels lonely before becoming hopeful. The images stay the same, but their order and captions change what I think they mean.</p>
+            <p>These are fictional stories told through collected photographs.</p>
+        </div>
 
-            <p>
-                For my second sequence, I will use the same three photos
-                in a different order to create a different meaning.
-            </p>
-
-            <div class="sequence-preview">
-                <div class="small-box">
-                    <p>Photo 3</p>
-                </div>
-
-                <div class="small-box">
-                    <p>Photo 1</p>
-                </div>
-
-                <div class="small-box">
-                    <p>Photo 2</p>
-                </div>
-            </div>
-
-            <p class="todo">
-                I still need to add my photos, finish the captions,
-                and make this sequence interactive.
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <p>CCT360 Lab 3 - Class Progress</p>
-    </footer>
-
-    <script src="js/script.js"></script>
+        <div class="credits">
+            <p><strong>Photo credits:</strong> <a href="https://unsplash.com/photos/NaEkJynz_s4">Path: Eric Muhr</a> / <a href="https://unsplash.com/photos/ox9Y-Ad--_k">Bench: Tijs van Leur</a> / <a href="https://unsplash.com/photos/L3c9gGjCCHg">Sunset: Roger Starnes Sr</a>.</p>
+            <p>Photos from Unsplash, used under the <a href="https://unsplash.com/license">Unsplash License</a>.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

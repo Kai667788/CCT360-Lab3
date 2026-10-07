@@ -1,94 +1,122 @@
+/* My page colours, spacing, and type. */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #222222;
+    background-color: #f4f1e9;
+    color: #283b33;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #1f3a5f;
-    color: white;
-    text-align: center;
-    padding: 30px;
+.page {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-header h1 {
-    margin: 0;
+.header {
+    padding: 36px 0 22px;
+    border-bottom: 2px solid #283b33;
 }
 
-main {
-    width: 85%;
-    max-width: 900px;
-    margin: 30px auto;
+.label {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #65746a;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 52px;
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 12px 0;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+    margin: 8px 0;
+}
+
+.instructions {
+    margin: 24px 0;
+}
+
+/* Flexbox lets the stories wrap on smaller screens. */
+.stories {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0 -10px;
 }
 
 .story {
-    background-color: white;
-    padding: 25px;
-    margin-bottom: 30px;
-    border: 1px solid #cccccc;
+    flex-basis: 400px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    margin: 10px;
+    padding: 22px;
+    background-color: #ffffff;
+    border: 1px solid #d3d9cf;
 }
 
-#photoBox {
-    height: 320px;
-    background-color: #e5e5e5;
-    border: 1px solid #999999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+.stage {
+    padding: 8px 0;
+    border-top: 1px solid #d3d9cf;
+    font-size: 14px;
+    font-weight: bold;
 }
 
-#photoText {
-    font-size: 24px;
+.story img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-#storyCaption {
-    text-align: center;
-    font-size: 18px;
+.caption {
+    min-height: 78px;
+    margin: 16px 0;
 }
 
 .buttons {
     display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 button {
-    padding: 10px 18px;
-    border: 1px solid #333333;
-    background-color: #eeeeee;
+    margin: 0 8px 8px 0;
+    padding: 10px 14px;
+    background-color: #283b33;
+    color: #ffffff;
+    border: 1px solid #283b33;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #dddddd;
+.meaning {
+    padding-top: 16px;
+    border-top: 1px solid #d3d9cf;
+    font-size: 14px;
+    color: #526359;
 }
 
-.sequence-preview {
-    display: flex;
-    gap: 15px;
-    margin-top: 20px;
+.reflection {
+    margin-top: 24px;
+    padding: 24px;
+    background-color: #e3e9dc;
 }
 
-.small-box {
-    width: 33%;
-    height: 130px;
-    background-color: #e5e5e5;
-    border: 1px solid #999999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.credits {
+    padding: 22px 0 30px;
+    font-size: 12px;
+    color: #526359;
 }
 
-.todo {
-    margin-top: 20px;
-    font-style: italic;
-}
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #dddddd;
+a {
+    color: #283b33;
 }
